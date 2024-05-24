@@ -5,7 +5,7 @@ import React from 'react'
 const Login = () => {
   return (
     <div className='h-full w-full'>
-      <div className='max-w-lg p-4 bg-slate-100 shadow-lg mx-auto min-h-96 mt-5'>
+      <div className='max-w-lg p-4 bg-gray-50 shadow-2xl mx-auto min-h-96 mt-16'>
         <h2 className='text-3xl font-semibold text-center font-mono my-5 underline'>Login</h2>
         <form className='max-w-96 mx-auto'>
           <TextField id="outlined-basic" label="email" variant="outlined" className='w-full' margin='normal' />

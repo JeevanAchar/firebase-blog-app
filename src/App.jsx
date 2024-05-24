@@ -1,15 +1,11 @@
-import React from 'react'
-import Login from './components/auth/Login'
-import SignUp from './components/auth/SignUp'
-import Navbar from './components/common/Navbar'
+import React from 'react';
+import Router from './routes/Router';
 
 const App = () => {
   return (
-    <div>
-      {/* <Login/> */}
-      {/* <SignUp /> */}
-      <Navbar />
-    </div>
+    <>
+      <Router />
+    </>
   )
 }
 

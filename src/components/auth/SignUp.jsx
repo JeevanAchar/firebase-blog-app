@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const SignUp = () => {
   return (
     <div className='w-full h-full'>
-      <div className="max-w-lg p-4 bg-slate-100 shadow-lg mx-auto min-h-96 mt-5">
+      <div className="max-w-lg p-4 bg-gray-50 shadow-2xl mx-auto min-h-96 mt-16">
         <h2 className='text-center font-semibold text-4xl my-5'>Sign-up</h2>
         <form className="max-w-96 mx-auto">
           <TextField id="outlined-basic" label="email" variant="outlined" className='w-full' margin='normal' />
