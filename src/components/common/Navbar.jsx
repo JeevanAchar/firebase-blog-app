@@ -1,5 +1,6 @@
 import React from 'react';
 import { CgProfile } from "react-icons/cg";
+import { FaUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
                 <div>
-                    <Link to="/profile"><CgProfile className='text-gray-500 text-3xl cursor-pointer' /></Link>
+                    <Link to="/profile"><FaUser className='text-gray-500 text-3xl cursor-pointer' /></Link>
                 </div>
             </div>
         </div>
