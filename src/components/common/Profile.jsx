@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 
 const Profile = () => {
     return (
-        <div className='w-full h-full'>
+        <div className='w-full h-full absolute top-0 z-50 bg-white'>
             <div className='max-w-[400px] mx-auto p-4 bg-gray-50 shadow-2xl'>
                 <div className='flex items-center justify-between'>
-                    <FaArrowLeft className='cursor-pointer' />
+                    <Link to="/"><FaArrowLeft className='cursor-pointer' /></Link>
                     <span className='w-56 text-3xl font-semibold underline text-gray-500'>Profile</span>
                 </div>
                 <div className='flex items-center justify-center my-4' >
