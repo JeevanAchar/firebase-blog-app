@@ -23,7 +23,7 @@ const Login = () => {
 
     if (!values.password) {
       errors.password = "required";
-    } else if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(values.password)) {
+    } else if (!passwordRules.test(values.password)) {
       errors.password = "Must contain atleast 1 uppercase, 1 lowercase, and 1 numeric character. Minimum 8 character";
     };
     return errors;
@@ -46,7 +46,7 @@ const Login = () => {
         <h2 className='text-3xl font-semibold text-center font-mono my-5 underline'>Login</h2>
         <form className='max-w-96 mx-auto' autoComplete='off' onSubmit={formik.handleSubmit} >
           <TextField id="email" label="email" name='email' variant="outlined" className='w-full' margin='dense' value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} />
-          <p className="h-5 w-full text-sm text-red-600">
+          <p className="h-5 w-full text-sm text-red-600 mb-3">
             {formik.touched.email && formik.errors.email ? formik.errors.email : null}
           </p>
           {/* <TextField id="password" label="password" name='password' variant="outlined" className='w-full' margin='dense' value={formik.values.password} onChange={formik.handleChange} onBlurCapture={formik.handleBlur} /> */}
