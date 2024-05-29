@@ -6,6 +6,7 @@ import Navbar from '../components/common/Navbar';
 import Profile from '../components/common/Profile';
 import HomePage from '../components/blogPost/HomePage';
 import PageNotFound from '../components/common/PageNotFound';
+import CreateBlog from '../components/blogPost/CreateBlog';
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path="/create-blog" element={<CreateBlog />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>

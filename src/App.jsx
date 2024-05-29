@@ -5,8 +5,7 @@ import CreateBlog from './components/blogPost/CreateBlog';
 const App = () => {
   return (
     <>
-      {/* <Router /> */}
-      <CreateBlog />
+      <Router />
     </>
   )
 }
