@@ -15,7 +15,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
                     <li>
                         <button className={`flex items-center justify-center px-5 h-8 ms-0  leading-tight text-gray-500 bg-white border border-e-0 border-gray-300
                             rounded-s-lg hover:bg-gray-500 hover:text-white ${currentPage === 1 ? "disabled:cursor-not-allowed" : ""}
-                        `} disabled={currentPage === 1} onChange={() => onPageChange(currentPage - 1)} >Previous</button>
+                        `} disabled={currentPage === 1} onClick={() => onPageChange(currentPage - 1)} >Previous</button>
                     </li>
                     {
                         pageNumbers.map((number) => {

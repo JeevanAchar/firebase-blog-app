@@ -6,7 +6,7 @@ const Navbar = () => {
     const [user, setUser] = useState(false);
 
     return (
-        <div className='w-full bg-gray-50 py-3 border-b-2'>
+        <div className='w-full bg-gray-50 py-3 border-b-2 sticky top-0 '>
             <div className="sm:w-3/5 sm:px-5 mx-auto flex items-center justify-between">
                 <div className='flex items-center w-2/5 justify-between'>
                     <div className="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white focus:ring-4 focus:outline-none focus:ring-purple-200">
