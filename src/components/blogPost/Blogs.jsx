@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 
 const Blogs = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(8);
+    const [itemsPerPage] = useState(7);
 
     // calculate the total number of pages
     const totalPages = Math.ceil(blogs.length / itemsPerPage);
@@ -14,16 +14,13 @@ const Blogs = () => {
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = blogs.slice(indexOfFirstItem, indexOfLastItem);
 
-    console.log(indexOfFirstItem, "first item");
-    console.log(currentItems, "current pages");
-
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
     }
 
     return (
         <div className='w-full h-full'>
-            <div className='sm:w-3/5 mx-auto m-0 p-3'>
+            <div className='md:w-3/5 mx-auto m-0 p-3'>
                 {
                     currentItems.map((blog, index) => {
                         return (
