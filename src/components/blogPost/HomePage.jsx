@@ -3,6 +3,7 @@ import Blogs from './Blogs';
 import { FaEdit } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { IoNewspaperOutline } from "react-icons/io5";
+import Footer from '../common/Footer';
 
 const HomePage = () => {
   return (
@@ -34,6 +35,7 @@ const HomePage = () => {
         </div>
       </div>
       <Blogs/>
+      <Footer/>
     </div>
   )
 }
