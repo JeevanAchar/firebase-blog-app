@@ -13,24 +13,24 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             <nav aria-label='page navigation'>
                 <ul className='inline-flex -space-x-px text-sm'>
                     <li>
-                        <button className={`flex items-center justify-center px-5 h-8 ms-0  leading-tight text-gray-500 bg-white border border-e-0 border-gray-300
-                            rounded-s-lg hover:bg-gray-500 hover:text-white ${currentPage === 1 ? "disabled:cursor-not-allowed" : ""}
+                        <button className={`flex items-center justify-center px-5 h-8 ms-0  leading-tight text-stone-900 font-semibold bg-white border border-e-0 border-stone-700
+                            rounded-s-lg hover:bg-stone-800 hover:text-white ${currentPage === 1 ? "disabled:cursor-not-allowed" : ""}
                         `} disabled={currentPage === 1} onClick={() => onPageChange(currentPage - 1)} >Previous</button>
                     </li>
                     {
                         pageNumbers.map((number) => {
                             return (
                                 <li key={number}>
-                                    <button className='flex items-center justify-center px-5 h-8 ms-0  leading-tight text-gray-500 bg-white border border-gray-300
-                         hover:bg-gray-500 hover:text-white'
+                                    <button className='flex items-center justify-center px-5 h-8 ms-0  leading-tight text-stone-900 bg-white border border-stone-700 font-semibold
+                         hover:bg-stone-800 hover:text-white'
                                         onClick={() => onPageChange(number)} >{number}</button>
                                 </li>
                             )
                         })
                     }
                     <li>
-                        <button className={`flex items-center justify-center px-7 h-8 ms-0  leading-tight text-gray-500 bg-white border  border-gray-300
-                        rounded-e-lg  hover:bg-gray-500 hover:text-white ${currentPage === totalPages ? "disabled:cursor-not-allowed" : ""}
+                        <button className={`flex items-center justify-center px-7 h-8 ms-0  leading-tight text-stone-900 font-semibold bg-white border  border-stone-700
+                        rounded-e-lg  hover:bg-stone-800 hover:text-white ${currentPage === totalPages ? "disabled:cursor-not-allowed" : ""}
                         `} disabled={currentPage === totalPages} onClick={() => onPageChange(currentPage + 1)} >Next</button>
                     </li>
                 </ul>

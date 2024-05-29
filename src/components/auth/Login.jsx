@@ -70,9 +70,9 @@ const Login = () => {
             {formik.touched.password && formik.errors.password ? formik.errors.password : null}
           </p>
           <div className='text-center'>
-            <button className='px-24 py-3 bg-blue-700 text-white rounded-lg my-4' type='submit'>Submit</button>
+            <button className='px-24 py-3 bg-black text-white rounded-lg my-4' type='submit'>Submit</button>
           </div>
-          <div className='font-medium'>Don't have a account <span className='text-blue-700 font-semibold underline cursor-pointer hover:text-blue-500 hover:no-underline'><Link to="/sign-up" >SignUp</Link></span></div>
+          <div className='font-medium'>Don't have a account <span className='text-blue-700 font-semibold cursor-pointer hover:text-blue-600 hover:underline'><Link to="/sign-up" >SignUp</Link></span></div>
         </form>
       </div>
     </div>

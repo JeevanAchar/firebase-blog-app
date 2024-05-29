@@ -25,8 +25,8 @@ const Blogs = () => {
                     currentItems.map((blog, index) => {
                         return (
                             <div className='overflow-y-hidden bg-white hover:shadow-lg px-6 py-3 cursor-pointer my-3' key={index}>
-                                <p className='sm:text-2xl text-xl font-semibold text-blue-500'>{blog.blogName}</p>
-                                <p className='my-2 sm:text-sm text-xs font-semibold text-gray-500'>Written by {blog.author}</p>
+                                <p className='sm:text-2xl text-xl font-semibold text-slate-800'>{blog.blogName}</p>
+                                <p className='my-2 sm:text-sm text-xs font-medium text-gray-400'>Written by {blog.author}</p>
                             </div>
                         )
                     })

@@ -63,9 +63,9 @@ const SignUp = () => {
             formik.touched.password && formik.errors.password ? formik.errors.password : null
           }</p>
           <div className='text-center'>
-            <button className='px-24 py-3 text-white font-semibold bg-blue-600 rounded-md my-3' type='submit'>Submit</button>
+            <button className='px-24 py-3 text-white font-semibold bg-black rounded-md my-3' type='submit'>Submit</button>
           </div>
-          <div className="font-medium">Have an account <span className='text-blue-700 underline cursor-pointer font-bold hover:text-blue-500 hover:no-underline'><Link to="/login">Login</Link></span></div>
+          <div className="font-medium">Have an account <span className='text-blue-700 cursor-pointer font-semibold hover:text-blue-600 hover:underline'><Link to="/login">Login</Link></span></div>
         </form>
       </div>
     </div>
