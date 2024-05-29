@@ -7,6 +7,7 @@ import Profile from '../components/common/Profile';
 import HomePage from '../components/blogPost/HomePage';
 import PageNotFound from '../components/common/PageNotFound';
 import CreateBlog from '../components/blogPost/CreateBlog';
+import Faqs from '../components/common/Faq\'s';
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/profile' element={<Profile />} />
         <Route path="/create-blog" element={<CreateBlog />} />
+        <Route path='/faqs' element={<Faqs />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>

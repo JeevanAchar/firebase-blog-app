@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is your return policy?",
+        "answer": "We accept returns within 30 days of purchase. The item must be in its original condition with all tags and packaging intact. Please visit our Returns & Exchanges page for more details."
+    },
+    {
+        "question": "How can I track my order?",
+        "answer": "Once your order has shipped, you will receive an email with a tracking number. You can use this number to track your order on our shipping partner's website. You can also log in to your account on our website to check your order status."
+    },
+    {
+        "question": "Do you offer international shipping?",
+        "answer": "Yes, we offer international shipping to most countries. Shipping rates and delivery times vary depending on the destination. Please check our Shipping Information page for more details."
+    },
+    {
+        "question": "How can I contact customer service?",
+        "answer": "You can contact our customer service team via email at support@example.com or by calling 1-800-123-4567. Our customer service hours are Monday to Friday, 9 AM to 5 PM EST."
+    },
+    {
+        "question": "Can I change or cancel my order?",
+        "answer": "Orders can be changed or canceled within one hour of placing the order. Please contact our customer service team as soon as possible to request any changes or cancellations."
+    }
+]
