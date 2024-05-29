@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import blogs from "./Blogs.json";
+import Pagination from './Pagination';
 
 const Blogs = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage] = useState(8);
+
+    // calculate the total number of pages
+    const totalPages = Math.ceil(blogs.length / itemsPerPage);
+
+    // Determine the items to display on the current page 
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = blogs.slice(indexOfFirstItem, indexOfLastItem);
+
+    console.log(indexOfFirstItem, "first item");
+    console.log(currentItems, "current pages");
+
+    const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    }
+
     return (
         <div className='w-full h-full'>
             <div className='sm:w-3/5 mx-auto m-0 p-3'>
                 {
-                    blogs.map((blog, index) => {
+                    currentItems.map((blog, index) => {
                         return (
                             <div className='overflow-y-hidden bg-white hover:shadow-lg px-6 py-3 cursor-pointer my-3' key={index}>
                                 <p className='sm:text-2xl text-xl font-semibold text-blue-500'>{blog.blogName}</p>
@@ -15,6 +34,13 @@ const Blogs = () => {
                         )
                     })
                 }
+                <div className='text-black'>
+                    <Pagination
+                        currentPage={currentPage}
+                        totalPages={totalPages}
+                        onPageChange={handlePageChange}
+                    />
+                </div>
             </div>
         </div>
     )

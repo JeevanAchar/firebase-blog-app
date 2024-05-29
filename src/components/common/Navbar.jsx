@@ -9,8 +9,8 @@ const Navbar = () => {
         <div className='w-full bg-gray-50 py-3 border-b-2'>
             <div className="sm:w-3/5 sm:px-5 mx-auto flex items-center justify-between">
                 <div className='flex items-center w-2/5 justify-between'>
-                    <div class="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white focus:ring-4 focus:outline-none focus:ring-purple-200">
-                        <Link to="/" class="relative px-5 py-2 transition-all ease-in duration-75 rounded-md">
+                    <div className="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white focus:ring-4 focus:outline-none focus:ring-purple-200">
+                        <Link to="/" className="relative px-5 py-2 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0">
                             Blog app
                         </Link>
                     </div>
@@ -26,8 +26,8 @@ const Navbar = () => {
                 <div>
                     {user ?
                         <Link to="/profile"><FaUser className='text-gray-500 text-3xl cursor-pointer' /></Link> :
-                        <button class="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-md group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300">
-                            <Link to="/login" class="relative px-5 py-2 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+                        <button className="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-md group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <Link to="/login" className="relative px-5 py-2 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
                                 login
                             </Link>
                         </button>
