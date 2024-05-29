@@ -37,7 +37,7 @@ const SignUp = () => {
   return (
     <div className='w-full h-full'>
       <div className="max-w-lg p-4 bg-gray-50 shadow-2xl mx-auto min-h-96 mt-16">
-        <h2 className='text-center font-semibold text-4xl my-5'>Sign-up</h2>
+        <h2 className='text-center font-normal text-4xl my-5 font-serif'>Create an account</h2>
         <form className="max-w-96 mx-auto" onSubmit={formik.handleSubmit} autoComplete='off'>
           <TextField id="email" label="email" name='email' variant="outlined" className='w-full' margin='dense' value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} />
           <p className='h-5 w-full text-sm text-red-600 mb-2'>{
