@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className='w-full h-full'>
       <div className='h-[calc(100vh-8vh)] flex flex-col justify-center items-center'>
-        <h2 className='text-5xl font-bold my-3'>Welcome to the BlogApp</h2>
+        <h2 className='text-5xl font-bold my-3'>Welcome to the Blog Z</h2>
         <p className='my-3 text-gray-500 text-xl font-semibold'>Immerse Yourself in a Diverse Community of Writers and Readers, and Unleash Your Creative Potential. Embark on a Journey of Discovery and Inspiration.</p>
         <div>
           <Link className='inline-block'>

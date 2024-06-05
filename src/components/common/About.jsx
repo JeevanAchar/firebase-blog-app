@@ -7,8 +7,8 @@ const About = () => {
                 <h2 className='text-5xl font-semibold text-stone-900 font-mono my-4 text-center mb-3 italic'>About us</h2>
                 <hr className='max-w-20 mx-auto text-stone-900 border-2 border-stone-900' />
                 <div className='md:max-w-[700px]'>
-                    <p className='text-3xl text-stone-800 font-medium my-4'>Welcome to BlogApp!</p>
-                    <p className='text-gray-400 font-medium text-base'>"At BlogApp, we believe in the power of stories and the impact of sharing knowledge. Our mission is to provide a vibrant platform where writers, thinkers, and enthusiasts from all walks of life can share their insights, experiences, and ideas with a global audience."</p>
+                    <p className='text-3xl text-stone-800 font-medium my-4'>Welcome to Blog Z!</p>
+                    <p className='text-gray-400 font-medium text-base'>At Blog Z, we believe in the power of stories and the impact of sharing knowledge. Our mission is to provide a vibrant platform where writers, thinkers, and enthusiasts from all walks of life can share their insights, experiences, and ideas with a global audience.</p>
                 </div>
                 <hr className='border-b-[1px] my-5' />
                 <div className='flex flex-col items-end'>

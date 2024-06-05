@@ -16,22 +16,22 @@ const Faqs = () => {
     return (
         <section className="w-full h-full">
             <div className='md:w-3/5 mx-auto px-6 my-3'>
-                <h2 className='sm:text-5xl font-semibold text-gray-700 text-center underline my-4'>FAQ's</h2>
+                <h2 className='sm:text-5xl font-semibold text-stone-900 text-center underline my-4'>FAQ's</h2>
                 <div>
                     {
                         faqsJson.map((faq, index) => {
                             return (
                                 <div className="bg-white min-h-16 shadow-lg py-3 px-7 rounded-lg my-3" key={index} onClick={() => { handleSelected(index) }}>
                                     <div className="flex justify-between items-center my-4">
-                                        <div className="flex items-center font-semibold text-gray-600">
+                                        <div className="flex items-center font-semibold text-stone-800">
                                             <span className="w-7 sm:text-2xl text-xl">
                                                 <IoIosHelpCircleOutline />
                                             </span>
                                             <p>{faq.question}</p>
                                         </div>
-                                        {selected === index ? <FaChevronUp className='sm:text-2xl text-xl text-gray-600 cursor-pointer' /> : <FaAngleDown className='sm:text-2xl text-xl text-gray-600 cursor-pointer' />}
+                                        {selected === index ? <FaChevronUp className='sm:text-2xl text-xl text-stone-900 font-normal cursor-pointer' /> : <FaAngleDown className='sm:text-2xl text-xl text-stone-900 cursor-pointer font-normal' />}
                                     </div>
-                                    <div className='sm:text-base text-sm text-gray-500 font-semibold px-7'>
+                                    <div className='sm:text-base text-sm text-zinc-600 font-semibold px-7'>
                                         <small className={selected === index ? "block" : "hidden"}>{faq.answer}</small>
                                     </div>
                                 </div>
